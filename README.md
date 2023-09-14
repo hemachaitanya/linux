@@ -53,7 +53,32 @@ yum ,rpm (in red hat family)
 
 ### (1) task
 
-* 
+## named arguments and posissional arguments
+
+*  ping -t google.com (continuously ping)
+
+* process: every process you have unic ips , each process has some cpu and ram
+
+* server: servce is a process but the service have options 
+        - when service started eith your s/m  (automatic start)
+
+        - or you manually start the process
+
+        fore ground process:
+
+        background process:
+        * when which will start [ex: database and web server runs all the times called deamon and service]
+
+        * enable [service name]
+        * start [service name]
+        * stop  [services]
+
+## terminal
+
+* power shell
+* command prompt
+* bash (borned again shell)
+* sh 
 
 
 
