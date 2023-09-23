@@ -75,10 +75,82 @@ yum ,rpm (in red hat family)
 
 ## terminal
 
-* power shell
+* power shell(for windows)
 * command prompt
-* bash (borned again shell)
+* bash (borned again shell  , for linux)
 * sh 
+
+## integration testing
+## unit test
+mvn test (every  java 
+
+
+developer can test these command)
+
+
+### /home:
+* autherized users  are presented
+
+### /etc
+* configure files are present to downloaded applications
+
+### /root
+* root users path
+
+### / pdc
+* installed any onfiguration files 
+
+### /sbin
+* which commands are do by root user
+        adduser qtuser
+### /var
+
+* find ot the variable or logs files we open /var/logs
+   * /var/msgs
+### /mnt
+* empty file structure you can mount any point
+### /media
+* mount into default point
+
+###  / boot
+
+* install the software server boot the our files
+
+### /opt
+
+* installed in third party application we using opt 
+
+## linux architechture
+* kernal
+* shell (it's interface between the you and kernal)
+* utilities (applcations)
+
+## commands
+
+* cat <file.name>
+* mkdir <folder name>
+
+*  touch {1...n}.txt
+
+*  rm
+* - d directory
+* - l link
+* - normal
+* -b lock file 
+
+
+* if you want to move one dir to another dir you can use <cd>
+
+* ls
+* ls -l permssions
+* dir inside dir 
+        go inside dir and create another dir
+        mkdir -p <folder>/<anther-folder>
+* cp <source> <destination>
+
+* 
+
+
 
 
 
