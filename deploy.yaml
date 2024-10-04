@@ -1,0 +1,51 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nop
+  labels: 
+    app: nopcommerce
+spec:
+  minReadySeconds: 3
+  replicas: 3
+  selector:
+    matchLabels: 
+      app: nop
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 50%
+      maxUnavailable: 50%
+  template:
+    metadata:
+      name: nop
+      labels:
+        app: nop
+    spec:
+      containers:
+        - name: nop
+          image: nopcommerceteam/nopcommerce
+          ports:
+            - containerPort: 5000
+              protocol: TCP
+          readinessProbe:
+            failureThreshold: 2
+            httpGet: 
+              port: 5000
+              path: /
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            successThreshold: 1
+            timeoutSeconds: 1
+          livenessProbe:
+            failureThreshold: 2
+            httpGet: 
+              port: 5000
+              path: /
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            successThreshold: 1
+            timeoutSeconds: 1
+            
+
+    

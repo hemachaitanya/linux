@@ -148,7 +148,66 @@ developer can test these command)
         mkdir -p <folder>/<anther-folder>
 * cp <source> <destination>
 
-* 
+### 𝐅𝐢𝐥𝐞 𝐒𝐲𝐬𝐭𝐞𝐦 𝐎𝐩𝐞𝐫𝐚𝐭𝐢𝐨𝐧𝐬
+
+ls - List directory contents
+cd - Change directory
+mkdir - Make directories
+rm - Remove files or directories
+
+### 𝐅𝐢𝐥𝐞 𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧𝐬
+
+chmod - Change file mode bits
+chown - Change file owner and group
+chgrp - Change group ownership of files
+
+### 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭
+
+ps - Report a snapshot of current processes
+kill - Send a signal to a process
+top - Display Linux processes
+
+### 𝐍𝐞𝐭𝐰𝐨𝐫𝐤𝐢𝐧𝐠
+
+ifconfig - Configure network interfaces
+ping - Send ICMP ECHO_REQUEST to network hosts
+netstat - Display network connections, routing tables, interface statistics
+
+### 𝐒𝐲𝐬𝐭𝐞𝐦 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧
+
+uname - Display system information
+hostname - Display the system's hostname
+df - Display disk space usage
+
+### 𝐏𝐚𝐜𝐤𝐚𝐠𝐞 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭
+
+apt - Package manager for Debian-based systems
+yum - Package manager for RPM-based systems
+dpkg - Package manager for Debian-based systems
+
+### 𝐒𝐡𝐞𝐥𝐥 𝐒𝐜𝐫𝐢𝐩𝐭𝐢𝐧𝐠
+
+bash - GNU Bourne-Again SHell
+echo - Display a line of text
+grep - Search file(s) for lines that match a given pattern
+
+### 𝐔𝐬𝐞𝐫 𝐚𝐧𝐝 𝐆𝐫𝐨𝐮𝐩 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭
+
+useradd - Create a new user or update default new user information
+userdel - Delete a user account and related files
+passwd - Change user password
+
+### 𝐅𝐢𝐥𝐞 𝐓𝐫𝐚𝐧𝐬𝐟𝐞𝐫
+
+scp - Securely copy files between hosts
+rsync - Remote file synchronization
+wget - Retrieve files from the web
+
+### 𝐒𝐲𝐬𝐭𝐞𝐦 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬
+
+systemctl - Control the systemd system and service manager
+service - Run a System V init script
+chkconfig - Tool for enabling and disabling system services
 
 
 
