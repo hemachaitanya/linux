@@ -127,7 +127,62 @@ developer can test these command)
 
 ## commands
 
+* lsd  (snap install lsd)
+  
+* dust (snap install dust)
+  
+* batcat filename (easily identify the files and folders with colours )
+  
+* tldr awk (full command syntax)
+
+* man fine (full command syntax)
+
+* tail -f (check all logs)
+
+* smartctl +x harddiskpath | less (sudo apt install smartmontools)
+
+* 2 vms or server-client band width findout by using (iperf -s)
+
+*  mtr <hostname> (vpn cannot connected we use ping and trace route combinations for network connections)
+
+*  lsblk - This shows a hierarchical list of block devices and their partitions, including device names, types, sizes, and mount points
+
+*  lsblk -e7 = it disables loop mounts , only shows main partictions
+
+*  ffmpeg , ffplay (play audios and vedios using terminals)
+
+*  sudo adduser <username>
+
+    to change the password forcefull by using
+
+   * passwd --expire <username>
+
+   * su <username> (it shows the current password and new password)
+ 
+   * cat /etc/passwd | grep <perticular user>   (to serarch the home directory path for perticular user)
+ 
+   * d5gg (in vi editor delete )
+
+   
+
+
+### trouble
+
+* i want to connect one vpn to docker  ,, at that time its shows logs "your credentials is not correct"
+
+* finally i rectified by time zone (date) on server
+
+
+
 * cat <file.name>
+
+* sensors-watch
+
+* rm -rf
+
+* sudo passwd (to assign password for the root)
+
+* 
 * mkdir <folder name>
 
 *  touch {1...n}.txt
@@ -186,6 +241,48 @@ mkdir - Make directories
 
 rm - Remove files or directories
 
+
+### CPU Monitoring:
+
+top: Real-time view of processes with CPU usage stats.
+
+htop: Enhanced, interactive, and colorized version of top.
+
+mpstat: CPU usage statistics, showing breakdown of CPU time.
+
+iostat: CPU and disk I/O statistics.
+
+sar: Historical CPU and resource usage data.
+
+lscpu: Displays detailed CPU architecture information.
+
+### Memory Monitoring:
+
+free: Shows free and used RAM and swap space.
+
+vmstat: Reports processes, memory, paging, and CPU activity.
+
+
+ps aux --sort=-%mem: Lists processes by memory usage.
+
+smem: Displays memory usage with detailed breakdowns (PSS, RSS, USS
+
+### Combined CPU and Memory:
+
+dstat: Displays CPU, memory, disk, and network usage.
+
+glances: Real-time monitoring of CPU, memory, disk, and more.
+
+atop: Detailed real-time system and resource monitoring.
+
+### System Info:
+
+cat /proc/cpuinfo: Detailed CPU information.
+
+cat /proc/meminfo: Detailed memory information.
+
+uptime: Shows system uptime and average load.
+
 ### 𝐅𝐢𝐥𝐞 𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧𝐬
 
 chmod - Change file mode bits
@@ -225,6 +322,178 @@ uname - Display system information
 hostname - Display the system's hostname
 
 df - Display disk space usage
+
+### Basic Network Commands:
+
+ifconfig: Displays and configures network interfaces (deprecated, use ip).
+
+ip a: Shows all network interfaces and their IP addresses.
+
+ping: Tests connectivity to a host by sending ICMP echo requests.
+
+traceroute: Traces the route packets take to a network host.
+
+netstat: Displays network connections, routing tables, and interface statistics (deprecated, use ss).
+
+ss: Displays detailed information about sockets and network connections.
+
+hostname: Displays or sets the system’s hostname.
+
+dig: Queries DNS nameservers for DNS records.
+
+nslookup: Queries DNS records for a domain or IP address.
+
+route: Displays or modifies the IP routing table (deprecated, use ip route).
+
+ip route: Shows or configures the routing table.
+
+curl: Transfers data to or from a server using various protocols.
+
+wget: Downloads files from the web via HTTP, HTTPS, or FTP.
+
+scp: Securely copies files between hosts over SSH.
+
+ssh: Securely connects to a remote machine via SSH protocol.
+
+ftp: Transfers files to and from a remote host using the File Transfer Protocol.
+
+sftp: Securely transfers files over SSH.
+
+iptables: Configures packet filtering and firewall rules.
+
+nmap: Scans networks and hosts to discover open ports and services.
+
+whois: Retrieves domain registration and ownership information.
+
+arp: Displays and manipulates the ARP cache.
+
+mtr: Combines ping and traceroute to provide network diagnostics.
+
+ethtool: Displays or modifies Ethernet device settings.
+
+tcpdump: Captures and analyzes network packets.
+
+iwconfig: Configures wireless network interfaces (deprecated, use iw).
+
+
+iw: Configures wireless devices and shows their status.
+
+### Network Diagnostics:
+
+ping6: Tests connectivity to an IPv6 host.
+
+iperf: Measures network bandwidth and performance.
+
+tcping: Pings a TCP port on a server to check if it’s open.
+
+netcat (or nc): Utility for reading and writing data across network connections.
+
+### User Management Commands:
+
+Create a new user:
+
+
+sudo adduser username
+Add a new user (lower-level):
+
+
+sudo useradd username
+Modify an existing user (add to group):
+
+
+sudo usermod -aG groupname username
+Remove a user account:
+
+
+sudo deluser username
+Delete a user and their home directory:
+
+
+sudo userdel -r username
+Change a user’s password:
+
+
+sudo passwd username
+Change password expiry information:
+
+sudo chage -l username
+Group Management Commands:
+Create a new group:
+
+
+sudo addgroup groupname
+Add a new group (lower-level):
+
+
+sudo groupadd groupname
+Delete a group:
+
+
+sudo delgroup groupname
+Remove a group:
+
+
+sudo groupdel groupname
+Add user to a group:
+
+
+sudo gpasswd -a username groupname
+Permissions and Ownership Commands:
+Change file/directory permissions:
+
+
+chmod 755 filename
+Change file/directory owner:
+
+
+sudo chown username:groupname filename
+Change group ownership:
+
+
+sudo chgrp groupname filename
+Special Permissions:
+Setuid:
+
+
+chmod u+s filename
+Setgid:
+
+
+chmod g+s filename
+Sticky Bit:
+
+
+chmod +t directoryname
+User Information Commands:
+Display user ID and group ID:
+
+
+id username
+Show user’s groups:
+
+
+groups username
+Display user information:
+
+
+finger username
+Retrieve user entry from NSS:
+
+
+getent passwd username
+Miscellaneous:
+Safely edit the /etc/passwd file:
+
+
+sudo vipw
+Safely edit the /etc/group file:
+
+
+sudo vigr
+Execute commands with superuser privileges:
+
+
+sudo command
 
 ### 𝐏𝐚𝐜𝐤𝐚𝐠𝐞 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭
 
