@@ -1,5 +1,10 @@
 # linux
 
+* ps -ef
+
+* ps aux | awk '/your_command/ {print $2}' (COMMAND LIKE SLEEP )
+
+
 
 ###  TASKS
 
