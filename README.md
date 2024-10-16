@@ -25,6 +25,8 @@
     - `iostat -x`
     - `iotop`
     - `sar -d`
+     duet
+      -du -hf`
 
 5. Verify network connectivity:
 
