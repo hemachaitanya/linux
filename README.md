@@ -1,4 +1,165 @@
-### Here is a sample script that appends a line to delete_user.yml:
+# Here are some complete commands to troubleshoot latency and accessibility issues:
+
+ ## Latency Issues*
+
+1. Check system load:
+
+    - `top`
+    - `htop`
+    - `mpstat -A`
+
+2. Monitor CPU usage:
+
+    - `top -c`
+    - `htop -c`
+    - `sar -u`
+
+3. Analyze memory usage:
+
+    - `free -m`
+    - `vmstat -s`
+    - `pmap -d`
+
+4. Inspect disk I/O:
+
+    - `iostat -x`
+    - `iotop`
+    - `sar -d`
+
+5. Verify network connectivity:
+
+    - `ping -c 10 (link unavailable)`
+    - `traceroute (link unavailable)`
+    - `mtr (link unavailable)`
+
+6. Check application logs:
+
+    - `tail -f /var/log/app.log`
+    - `grep "error" /var/log/app.log`
+
+7. Use profiling tools:
+
+    - `gprof`
+    - `Valgrind --tool=memcheck`
+
+*Accessibility Issues*
+
+1. Check firewall rules:
+
+    - `iptables -n -L`
+    - `ufw status`
+
+2. Verify port availability:
+
+    - `netstat -tlnp | grep 80`
+    - `ss -tlnp | grep 80`
+
+3. Test network connectivity:
+
+    - `telnet (link unavailable) 80`
+    - `nc (link unavailable) 80
+
+4. Inspect DNS resolution:
+
+    - `dig (link unavailable)`
+    - `host (link unavailable)`
+
+5. Check application configuration:
+
+    - `cat /etc/app/config`
+    - `grep "listen" /etc/app/config`
+
+6. Monitor system logs:
+
+    - `tail -f /var/log/syslog`
+    - `grep "error" /var/log/syslog`
+
+7. Analyze access control lists (ACLs):
+
+    - `getfacl /path/to/file`
+
+*Networking Commands*
+
+1. `ping -c 10 (link unavailable)` (test network connectivity)
+
+2. `traceroute (link unavailable)` (analyze network route)
+
+3. `netstat -tlnp` (display network connections)
+
+4. `ss -tlnp` (display socket statistics)
+
+5. `tcpdump -i eth0 -n -vv -s 0 -c 100` (capture network traffic)
+
+6. `nc (link unavailable) 80` (test network connectivity)
+
+7. `dig (link unavailable)` (inspect DNS resolution)
+
+*System Commands*
+
+1. `top` (display system load)
+
+2. `htop` (interactive system monitor)
+
+3. `mpstat -A` (display CPU statistics)
+
+4. `vmstat -s` (display memo ry
+ statistics)
+
+5. `iostat -x` (display disk I/O statistics)
+
+6. `sar -u` (display system activity report)
+
+7. `sysctl -p` (configure system parameters)
+
+*Application-Specific Commands*
+
+1. `ps aux | grep app` (display process information)
+
+2. `pmap -d` (display process memory map)
+
+3. `strace -c` (analyze system calls)
+
+4. `lsof -i :80` (list open files)
+
+5. `curl -v (link unavailable)` (test HTTP connectivity)
+
+*Troubleshooting Steps*
+
+1. Identify symptoms
+2. Gather information
+3. Analyze logs
+4. Inspect system configuration
+5. Test network connectivity
+6. Verify application configuration
+7. Profile application performance
+
+*Additional Tools*
+
+1. New Relic (application performance monitoring)
+
+2. Datadog (system monitoring)
+
+3. Prometheus (monitoring system)
+
+4. Grafana (visualization platform)
+
+5. Wireshark (network protocol analyzer)
+
+To resolve issues:
+
+1. Identify the root causes
+
+2. Apply fixes or configuration change S
+
+3. Verify resolutions
+
+4. Monitor system performances
+
+5. Document changes
+
+Would you like more information on using these commands or troubleshooting specific issues?
+
+## Here is a sample script that appends a line to delete_user.yml:
 
 <<<<<<< HEAD
 Bash Script to Append a Line
