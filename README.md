@@ -1,3 +1,134 @@
+### codes
+
+Here are signal codes specifications from 
+
+### 1xx to 5xx:
+
+### 1xx - Informational Responses*
+
+- 100 Continue (request received, continue processing)
+
+- 101 Switching Protocols (switching to new protocol)
+
+- 102 Processing (processing request, no response yet)
+
+ ### *2xx - Success*
+
+- 200 OK (request successful)
+
+- 201 Created (resource created)
+
+- 202 Accepted (request accepted,
+ processing)
+
+- 203 Non-Authoritative Information (meta-information changed)
+
+- 204 No Content (no content returned)
+
+- 205 Reset Content (reset form)
+
+- 206 Partial Content (partial content returned)
+
+### 3xx - Redirection*
+
+- 300 Multiple Choices (multiple options)
+
+- 301 Moved Permanently (resource moved)
+
+- 302 Found (resource temporarily moved)
+
+- 303 See Other (redirect to different URL)
+
+- 304 Not Modified (resource unchanged)
+
+- 305 Use Proxy (use proxy to access resource)
+
+- 307 Temporary Redirect (temporary redirect)
+
+- 308 Permanent Redirect (permanent redirect)
+
+### 4xx - Client Errors*
+
+- 400 Bad Request (invalid request)
+
+- 401 Unauthorized (authentication required)
+
+- 402 Payment Required (payment required)
+
+- 403 Forbidden (access denied)
+
+- 404 Not Found (resource not found)
+
+- 405 Method Not Allowed (method not supported)
+
+- 406 Not Acceptable (content not acceptable)
+- 407 Proxy Authentication Required (proxy authentication)
+
+- 408 Request Timeout (request timed out)
+
+- 409 Conflict (resource conflict)
+
+- 410 Gone (resource permanently removed)
+
+- 411 Length Required (content length required)
+
+- 412 Precondition Failed (precondition failed)
+
+- 413 Payload Too Large (payload too large)
+
+- 414 URI Too Long (URI too long)
+
+- 415 Unsupported Media Type (media type unsupported)
+- 416 Range Not Satisfiable (range not satisfiable)
+
+- 417 Expectation Failed (expectation failed)
+
+- 418 I'm a teapot (April Fool's joke)
+- 421 Misdirected Request (misdirected request)
+- 422 Unprocessable Entity (unprocessable entity)
+- 423 Locked (resource locked)
+
+- 424 Failed Dependency (failed dependency)
+- 425 Too Early (too early)
+
+- 426 Upgrade Required (upgrade required)
+
+- 428 Precondition Required (precondition required)
+
+- 429 Too Many Requests (too many requests)
+
+- 431 Request Header Fields Too Large (header fields too large)
+
+- 451 Unavailable For Legal Reasons (unavailable for legal reasons)
+
+### 5xx - Server Errors*
+
+- 500 Internal Server Error (server error)
+
+- 501 Not Implemented (method not implemented)
+
+- 502 Bad Gateway (bad gateway)
+
+- 503 Service Unavailable (service unavailable)
+
+- 504 Gateway Timeout (gateway timeout)
+
+- 505 HTTP Version Not Supported (HTTP version unsupported)
+
+- 506 Variant Also Negotiates (variant also negotiates)
+
+- 507 Insufficient Storage (insufficient storage)
+
+- 508 Loop Detected (loop detected)
+- 509 Bandwidth Limit Exceeded (bandwidth limit exceeded)
+- 510 Not Extended (not extended)
+
+- 511 Network Authentication Required (network authentication)
+
+These signal codes are based on HTTP/1.1 specifications (RFC 7231).
+
+Would you like me to explain any specific code?
+
 # Here are some complete commands to troubleshoot latency and accessibility issues:
 
  ## Latency Issues*
