@@ -1,3 +1,22 @@
+### linux
+
+*  cp source-file-path destination-file-path
+
+*  Copy-Item source-file-path destination-file-path
+
+*  mkdir nameof-directory
+
+*  New-Item name-of-file
+
+*  cat file-name
+
+*  Start-Process ".\ADHAR (1).pdf" (for images)
+
+*  ls | grep "word-of file*"
+
+*  Get-ChildItem | Where-Object { $_.Name -like "*what you want to search*" }
+
+*   
 ### codes
 
 Here are signal codes specifications from 
