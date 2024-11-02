@@ -183,23 +183,23 @@ Jenkins Automation Commands
 5. ln -s /path/to/target /path/to/link
 ```
 #### Jenkinsfile Automation Commands
-
+```text
 1. pipeline { ... }
 2. stage('Stage Name') { ... }
 3. step('Step Name') { ... }
 4. env.VARIABLE_NAME
 5. withCredentials([usernamePassword(...)]) { ... }
-
-Script Automation Commands
-
+```
+#### Script Automation Commands
+```text
 1. sh /path/to/script.sh
 2. python /path/to/script.py
 3. groovy /path/to/script.groovy
 4. mvn clean package
 5. docker build -t image_name
-
-Troubleshooting Automation Commands
-
+```
+##### Troubleshooting Automation Commands
+```text
 1. dmesg | grep error
 2. sudo less /var/log/jenkins/jenkins.log
 3. df -h
