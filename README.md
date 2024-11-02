@@ -16,7 +16,10 @@
 
 *  Get-ChildItem | Where-Object { $_.Name -like "*what you want to search*" }
 
-*   
+*   rm -rf file-name
+
+*   Remove-Item file-name
+  
 ### codes
 
 Here are signal codes specifications from 
