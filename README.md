@@ -1,4 +1,116 @@
 ### linux
+### manage access to root user
+
+
+* sudo login , sudo -i
+
+* sudo useradd username
+
+* id username
+
+* su -,su --login
+
+* lxd init
+
+* lxc import ldap-server.tar.xz
+
+* lxc start ldap-server
+
+* lxc list
+
+* sudo apt update & sudo apt install libnss-ldapd -y
+
+* cat /etc/nsswitch.conf
+
+* cat /etc/nslcd.conf
+
+* id useename
+
+* getent passwd
+
+* getent passwd --service ldap
+
+* getent group --service ldap
+
+* ls /home
+
+* sudo pam-auth-update
+
+* sudo login username
+
+* ls /home
+
+## configure ip address and hostname resolution
+
+* cidr calculator
+
+* ip link
+
+* ip adress
+
+* ip addr
+
+* ip a
+
+* ip -c addr
+
+* ip addr -c
+
+* sudo ip link set dev enp0s8 up
+
+* sudo ip link set dev enp0s8 down
+
+* sudo ip addr add 10.0.0.40/24 dev enp0s8
+
+* sudo ip addr delete fe80::5054::ff::8050/64 dev enp0s8
+
+* sudo netplan get
+
+* ls /etc/netplan
+
+* cat /etc/netplan/50-cloud-init.yaml
+,,,
+* network:
+    ethernets:
+      enp0s8:
+        dhcp4 false
+        dhcp6 false
+        addresses:
+          - 10.0.0.9/24
+       nameservers:
+        addresses:
+          - to 192.168.0.0/24
+            via 10.0.0.100
+          - to default
+            via 10.0.0.1
+  version: 2
+  ,,,
+
+* sudo neatplan apply
+
+* sudo netplan try
+
+* sudo netpaln try --timeout 30
+
+* sudo chmod 600 /etc/ne tplan/99-mysettings.yaml
+
+* sudo netplan get
+
+* ip route
+
+* resolvectl status
+
+* sudo vim /etc/resolve.conf      add dns=1.1.1.1.9.9.9.9
+
+* resolvectl dns
+
+* sudo vim /etc/hosts
+
+* ls /usr/share/doc/netplan/examples/static.yaml
+
+* 
+
+## general commands
 
 *  cp source-file-path destination-file-path
 
