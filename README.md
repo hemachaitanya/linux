@@ -69,6 +69,30 @@
 * ls /etc/netplan
 
 * cat /etc/netplan/50-cloud-init.yaml
+
+* sudo ufw allow 22
+
+* sudo ufw delete 22
+
+* sudo ufw status 
+
+* sudo ufw delete qllow 22
+
+* sudo ufw allow from 10.0.0.0/24 to any port 22
+
+* sudo ufw allow from 10.0.0.0/24
+
+* sudo ufw deny 10.0.0.0/24
+
+* sudo ufw delete 1
+
+* sudo  ufw status numbered
+
+* ip link
+
+* 
+
+
 ,,,
 * network:
     ethernets:
