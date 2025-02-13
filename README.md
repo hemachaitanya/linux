@@ -1,4 +1,60 @@
 ### linux
+
+### all linux commands 
+```
+    7  alias kgn='kubectl get nodes -o=wide --show-labels'
+    8  docker container run -d -P jenkins/jenkins
+    9  docker container ls --quiet |awk '{print $1}'
+   10  bg %1
+   11  touch hema{1..5}.txt
+   12  ls -al
+   13  echo "hai hema 2" >> hema2.txt 
+   14  caat hema2.txt 
+   15  cat hema2.txt 
+   16  sudo addgroup chaitanya
+   17  sudo adduser hema
+   18  cat /etc/passwd
+   19  cat /etc/group
+   20  chgrp chaitanya hema5.txt
+   21  chmod 241 hema2.txt 
+   22  chmod u+x hema2.txt 
+   23  touch script.sh
+   24  echo 'sudo apt update && sudo apt install openjdk-17-jdk -y'
+   25  echo 'sudo apt update && sudo apt install openjdk-17-jdk -y' >>script.sh 
+   26  sudo chmod +x script.sh 
+   27  ./script.sh 
+   28  mkdir 2017
+   29  chown hema:cahitanya hema1.txt 
+   30  sudo chown hema:chaitanya hema1.txt 
+   31  sudo chown -R hema:chaitanya 2017/
+   32  sudo cp hema2.txt hema1.txt 
+   33  echo "hlo" >>hema2.txt 
+   34  echo "chaitu" >> hema2.txt 
+   35  cat hema2.txt 
+   36  cut -f1-3 hema2.txt 
+   37  cut -f1-1 hema2.txt 
+   38  touch file.csv
+   39  vi file.csv 
+   40  cut -f1-1 file.csv
+   41  date
+   42  date +"%Y-%m-%d %H:%M:%S"
+   43  df-h
+   44  df -h
+   45  df -i
+   46  dd if=/dev/sda of=/dev/sdb bs=64k conv=noerror,sync
+   47  dig google.com
+   48  dmesg
+   49  dmesg | grep usb
+   50  du -ah
+   51  du -sh
+   52  du -ah 2017/
+   53  $HOME
+   54  HOME=root
+   55  $HOME
+   56  snap install root-framework
+```
+
+
 ### manage access to root user
 
 
