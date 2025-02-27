@@ -24,7 +24,7 @@
 * ip a | grep 'inet'
 
 
-* ip r grt 1.1.1.1 | awk'{print $7}'
+* ip r get 1.1.1.1 | awk'{print $7}'
 
 * ifconfig eth0
 
