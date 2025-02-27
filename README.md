@@ -1,4 +1,38 @@
-### linux
+### Linux 
+
+### Ip address 
+
+* host name
+
+* hostname -I
+
+* ifconfig (install net-tools)
+
+* nmcli device show (snap install network -manager)
+
+* ip address
+
+* ip addr show
+
+* ip link
+
+* curl ifconfig.me
+
+*  wget -qo- ifconfig.me
+
+
+* ip a | grep 'inet'
+
+
+* ip r grt 1.1.1.1 | awk'{print $7}'
+
+* ifconfig eth0
+
+* 
+
+
+
+
 ### manage access to root user
 
 
